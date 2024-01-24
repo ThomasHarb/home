@@ -44,7 +44,7 @@ const Footer = () => (
             <Link
               underline="none"
               component="a"
-              href="/page-customers"
+              href="https://thomasharb.github.io/projects/"
               color="textPrimary"
               variant={'subtitle2'}
             >

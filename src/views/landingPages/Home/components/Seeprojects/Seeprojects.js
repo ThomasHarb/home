@@ -66,7 +66,7 @@ const Seeprojects = () => {
         <Box marginTop={3} display={'flex'} justifyContent={'center'}>
           <Button
             component={'a'}
-            href={'/page-customers'}
+            href={'https://thomasharb.github.io/projects/'}
             target={'_blank'}
             variant="contained"
             color="primary"

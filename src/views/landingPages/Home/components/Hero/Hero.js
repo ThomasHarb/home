@@ -104,7 +104,7 @@ const Hero = () => {
               >
                 <Button
                   component={'a'}
-                  href={'/page-customers'}
+                  href={'https://thomasharb.github.io/projects/'}
                   variant="outlined"
                   color="primary"
                   size="large"
@@ -118,16 +118,6 @@ const Hero = () => {
                 marginLeft={{ sm: 2 }}
                 width={{ xs: '100%', md: 'auto' }}
               >
-                {/*<Button
-                  component={'a'}
-                  href={'/page-customers'}
-                  variant="outlined"
-                  color="primary"
-                  size="large"
-                  fullWidth={isMd ? false : true}
-                >
-                  Let's be interactive
-                </Button>*/}
               </Box>
             </Box>
           </Box>
