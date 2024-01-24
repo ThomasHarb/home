@@ -21,7 +21,7 @@ const Footer = () => (
           display={'flex'}
           component="a"
           underline="none"
-          href="/"
+          href={ process.env.PUBLIC_URL + "/" }
           title="home"
           height={24}
           width={35}
@@ -33,7 +33,7 @@ const Footer = () => (
             <Link
               underline="none"
               component="a"
-              href="/"
+              href={ process.env.PUBLIC_URL + "/" }
               color="textPrimary"
               variant={'subtitle2'}
             >
@@ -57,7 +57,7 @@ const Footer = () => (
               color="primary"
               component="a"
               target="blank"
-              href="/page-contact"
+              href="https://thomasharb.github.io/contact/"
               size="small"
             >
               Contact me

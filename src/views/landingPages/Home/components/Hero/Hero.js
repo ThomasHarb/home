@@ -91,7 +91,7 @@ const Hero = () => {
                 size="large"
                 fullWidth={isMd ? false : true}
                 href={
-                  '/page-contact'
+                  'https://thomasharb.github.io/contact/'
                 }
                 target={'_blank'}
               >
