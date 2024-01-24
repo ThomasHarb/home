@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import CssBaseline from '@mui/material/CssBaseline';
-import getTheme from 'theme';
-import palettes from 'common/paletteTypes';
+import getTheme from './theme';
+import palettes from './common/paletteTypes';
 import AOS from 'aos';
 
 export const useDarkMode = () => {

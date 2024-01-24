@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes as ReactRoutes, Route } from 'react-router-dom';
-import WithLayout from 'WithLayout';
+import WithLayout from './WithLayout';
 // Available layouts
 import {
   Main as MainLayout,
