@@ -1,48 +1,45 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import TerminalIcon from '@mui/icons-material/Terminal';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import BiotechIcon from '@mui/icons-material/Biotech';
-import SchoolIcon from '@mui/icons-material/School';
-import ScienceIcon from '@mui/icons-material/Science';
-
+import React from "react";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import TerminalIcon from "@mui/icons-material/Terminal";
+import LaptopMacIcon from "@mui/icons-material/LaptopMac";
+import BiotechIcon from "@mui/icons-material/Biotech";
+import SchoolIcon from "@mui/icons-material/School";
+import ScienceIcon from "@mui/icons-material/Science";
 
 const DemoPages = () => {
-
   return (
     <Box>
       <Typography
         sx={{
-          textTransform: 'uppercase',
-          fontWeight: 'medium',
+          textTransform: "uppercase",
+          fontWeight: "medium",
         }}
         gutterBottom
-        color={'textSecondary'}
-        align={'center'}
-      >                         
-      </Typography>
+        color={"textSecondary"}
+        align={"center"}
+      ></Typography>
       <Typography
         sx={{
-          textTransform: 'uppercase',
-          fontWeight: 'medium',
+          textTransform: "uppercase",
+          fontWeight: "medium",
         }}
         gutterBottom
-        color={'textSecondary'}
-        align={'center'}
+        color={"textSecondary"}
+        align={"center"}
       >
         Career path
       </Typography>
       <Timeline position="alternate">
-        <TimelineItem>
+        {/* <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: 'auto 0' }}
             align="right"
@@ -64,14 +61,14 @@ const DemoPages = () => {
             </Typography>
             <Typography>Python Dev, Data Analysis, Data science & Web Dev</Typography>
           </TimelineContent>
-        </TimelineItem>
+        </TimelineItem> */}
         <TimelineItem>
           <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
+            sx={{ m: "auto 0" }}
             variant="body2"
             color="text.secondary"
           >
-            Nov 2020 - Nov 2023
+            Jan 2024 - Nov 2023
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
@@ -80,7 +77,7 @@ const DemoPages = () => {
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
               Pathoquest
             </Typography>
@@ -89,7 +86,7 @@ const DemoPages = () => {
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
+            sx={{ m: "auto 0" }}
             variant="body2"
             color="text.secondary"
           >
@@ -100,9 +97,9 @@ const DemoPages = () => {
             <TimelineDot color="primary" variant="outlined">
               <SchoolIcon />
             </TimelineDot>
-            <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
           </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
               MSc in Bioinformatics and Data science
             </Typography>
@@ -111,20 +108,20 @@ const DemoPages = () => {
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
+            sx={{ m: "auto 0" }}
             variant="body2"
             color="text.secondary"
           >
             Jun 2016 - Jun 2019
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
             <TimelineDot color="secondary">
               <BiotechIcon />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
               Cytometry expert
             </Typography>
@@ -133,7 +130,7 @@ const DemoPages = () => {
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
+            sx={{ m: "auto 0" }}
             align="right"
             variant="body2"
             color="text.secondary"
@@ -147,16 +144,18 @@ const DemoPages = () => {
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              Research engineer 
+              Research engineer
             </Typography>
-            <Typography>B Lymphocytes, Autoimmunity and Immunotherapies - UMR 1227</Typography>
+            <Typography>
+              B Lymphocytes, Autoimmunity and Immunotherapies - UMR 1227
+            </Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
+            sx={{ m: "auto 0" }}
             variant="body2"
             color="text.secondary"
           >
@@ -169,9 +168,9 @@ const DemoPages = () => {
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              MSc Immunotechnologies and Biotherapies 
+              MSc Immunotechnologies and Biotherapies
             </Typography>
             <Typography>UPMC Paris VI Sorbonnes University</Typography>
           </TimelineContent>
