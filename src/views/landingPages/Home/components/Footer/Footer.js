@@ -1,37 +1,37 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import React from "react";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
 const Footer = () => {
   return (
     <Box>
       <Typography
         sx={{
-          textTransform: 'uppercase',
-          fontWeight: 'medium',
+          textTransform: "uppercase",
+          fontWeight: "medium",
         }}
         gutterBottom
-        color={'textSecondary'}
-        align={'center'}
+        color={"textSecondary"}
+        align={"center"}
       >
-        Let's get started
+        A request, a question
       </Typography>
       <Box
         component={Typography}
         fontWeight={700}
-        variant={'h3'}
+        variant={"h3"}
         gutterBottom
-        align={'center'}
+        align={"center"}
       >
-        Let's talk about all of your project together.
+        Let's talk about it.
       </Box>
-      <Box marginTop={3} display={'flex'} justifyContent={'center'}>
+      <Box marginTop={3} display={"flex"} justifyContent={"center"}>
         <Button
-          component={'a'}
-          href={'https://thomasharb.github.io/contact/'}
-          target={'_blank'}
+          component={"a"}
+          href={"https://thomasharb.github.io/contact/"}
+          target={"_blank"}
           variant="contained"
           color="primary"
           size="large"

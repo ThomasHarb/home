@@ -68,7 +68,7 @@ const DemoPages = () => {
             variant="body2"
             color="text.secondary"
           >
-            Jan 2024 - Nov 2023
+            Nov 2020 - Jan 2024
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
@@ -90,7 +90,7 @@ const DemoPages = () => {
             variant="body2"
             color="text.secondary"
           >
-            Jun 2019 - Sept 2020
+            Sept 2019 - Sept 2020
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />

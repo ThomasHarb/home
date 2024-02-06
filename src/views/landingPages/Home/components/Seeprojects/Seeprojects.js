@@ -174,7 +174,10 @@ const Seeprojects = () => {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button size="small" href="/">
+                  <Button
+                    size="small"
+                    href="https://thomasharb.github.io/netflix-project/"
+                  >
                     Learn more
                   </Button>
                 </CardActions>
