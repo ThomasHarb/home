@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import { FaGitAlt } from "react-icons/fa";
 import { FaPython } from "react-icons/fa6";
 import { TbBrandJavascript } from "react-icons/tb";
 import { VscTerminalBash } from "react-icons/vsc";
@@ -127,8 +127,8 @@ const Hero = () => {
                     <div className="icon-container">
                       <Tooltip title="GitHub">
                         <div className="icon-wrapper">
-                          <GitHubIcon style={{ fontSize: "4em" }} />
-                          <Typography variant="caption">GitHub</Typography>
+                          <FaGitAlt style={{ fontSize: "4em" }} />
+                          <Typography variant="caption">Git</Typography>
                         </div>
                       </Tooltip>
                       <Tooltip title="Python">
