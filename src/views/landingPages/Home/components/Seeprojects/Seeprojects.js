@@ -91,10 +91,22 @@ const Seeprojects = () => {
           <Grid
             container
             spacing={2}
-            justifyContent="center"
             alignItems="stretch"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              flexWrap: "wrap",
+            }}
           >
-            <Grid item xs={12} sm={6} md={4} style={{ display: "flex" }}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              justifyContent="center"
+              style={{ display: "flex", alignContent: "center" }}
+            >
               <Card
                 sx={{
                   maxWidth: 343,
@@ -188,7 +200,14 @@ const Seeprojects = () => {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={4} style={{ display: "flex" }}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              style={{ display: "flex" }}
+              justifyContent="center"
+            >
               <Card
                 sx={{
                   maxWidth: 343,
@@ -371,7 +390,14 @@ const Seeprojects = () => {
                 </CardActions>
               </Card> */}
             </Grid>
-            <Grid item xs={12} sm={6} md={4} style={{ display: "flex" }}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              style={{ display: "flex" }}
+              justifyContent="center"
+            >
               <Card
                 sx={{
                   maxWidth: 343,
