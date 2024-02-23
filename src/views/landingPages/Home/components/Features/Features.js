@@ -312,24 +312,24 @@ export default function CareerStepReviewCard() {
 }*/
 
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useTheme } from '@mui/material/styles';
-import Card from '@mui/material/Card';
-import Box from '@mui/material/Box';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar';
-import Grid from '@mui/material/Grid';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import { colors } from '@mui/material';
+import React from "react";
+import PropTypes from "prop-types";
+import { useTheme } from "@mui/material/styles";
+import Card from "@mui/material/Card";
+import Box from "@mui/material/Box";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import Avatar from "@mui/material/Avatar";
+import Grid from "@mui/material/Grid";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+import ListItemAvatar from "@mui/material/ListItemAvatar";
+import { colors } from "@mui/material";
 
-const Features = ({ themeMode = 'dark' }) => {
+const Features = ({ themeMode = "dark" }) => {
   const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+  const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true,
   });
   return (
@@ -338,14 +338,14 @@ const Features = ({ themeMode = 'dark' }) => {
         <Box
           component={Typography}
           fontWeight={700}
-          variant={'h3'}
+          variant={"h3"}
           gutterBottom
-          align={'center'}
+          align={"center"}
         >
           About
         </Box>
-        <Typography align={'center'} color="textSecondary" variant={'h6'}>
-          Python developer 
+        <Typography align={"center"} color="textSecondary" variant={"h6"}>
+          Python developer
           <br />
           Data Analyst/Data scientist
         </Typography>
@@ -353,61 +353,61 @@ const Features = ({ themeMode = 'dark' }) => {
       <Grid container spacing={isMd ? 8 : 4}>
         {[
           {
-            title: 'Python Developer',
+            title: "Python Developer",
             subtitle:
-              'Introducing a seasoned Python developer, dedicated to delivering top-tier software solutions with precision and expertise.',
+              "Introducing a seasoned Python developer, dedicated to delivering top-tier software solutions with precision and expertise.",
             icon: (
               <svg
                 height={42}
                 width={42}
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="none" 
-                viewBox="0 0 24 24" 
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path 
-                  stroke-linecap="round" 
-                  stroke-linejoin="round" 
-                  d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" 
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"
                   strokeWidth={2}
                 />
               </svg>
             ),
             color: colors.blueGrey,
             lessons: [
-              'Understanding of front-end technologies',
-              'High attention to detail',
-              'Excellent communication and problem-solving skills',
-              'Proficient understanding of code versioning tools',
+              "Understanding of front-end technologies",
+              "High attention to detail",
+              "Excellent communication and problem-solving skills",
+              "Proficient understanding of code versioning tools",
             ],
           },
           {
-            title: 'Data Analyst',
+            title: "Data Analyst / Data visualization",
             subtitle:
-              'Meet an adept data analyst, proficient in transforming complex data into meaningful insights, guiding data-driven decisions with finesse.',
+              "Meet an adept data analyst, proficient in transforming complex data into meaningful insights, guiding data-driven decisions with finesse.",
             icon: (
-              <svg 
+              <svg
                 height={42}
                 width={42}
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="none" 
-                viewBox="0 0 24 24"  
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path 
-                  stroke-linecap="round" 
+                <path
+                  stroke-linecap="round"
                   stroke-linejoin="round"
                   strokeWidth={2}
-                  d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" 
+                  d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"
                 />
               </svg>
             ),
             color: colors.lightBlue,
             lessons: [
-              'Create scripts to collate and analyze data',
-              'Work with Python libraries like Pandas',
-              'Create data models to use in reports for internal or client use',
-              'Analyze statistical data',
+              "Create scripts to collect and analyze data",
+              "Work with Python libraries like Pandas for data manipulation",
+              "Create interactive dashboard to use in reports for internal or client use",
+              "Analyze statistical data",
             ],
           },
         ].map((item, i) => (
@@ -415,21 +415,21 @@ const Features = ({ themeMode = 'dark' }) => {
             <Grid
               container
               spacing={isMd ? 4 : 2}
-              flexDirection={i % 2 === 1 ? 'row-reverse' : 'row'}
+              flexDirection={i % 2 === 1 ? "row-reverse" : "row"}
             >
               <Grid
                 item
                 xs={12}
                 md={6}
-                data-aos={isMd ? 'fade-right' : 'fade-up'}
+                data-aos={isMd ? "fade-right" : "fade-up"}
               >
                 <Box
                   component={Card}
-                  display={'flex'}
-                  alignItems={'center'}
-                  width={'100%'}
-                  height={'100%'}
-                  bgcolor={item.color[themeMode === 'light' ? 50 : 900]}
+                  display={"flex"}
+                  alignItems={"center"}
+                  width={"100%"}
+                  height={"100%"}
+                  bgcolor={item.color[themeMode === "light" ? 50 : 900]}
                   boxShadow={0}
                 >
                   <CardContent>
@@ -438,16 +438,16 @@ const Features = ({ themeMode = 'dark' }) => {
                       width={60}
                       height={60}
                       marginBottom={6}
-                      bgcolor={item.color[themeMode === 'light' ? 900 : 50]}
+                      bgcolor={item.color[themeMode === "light" ? 900 : 50]}
                       boxShadow={4}
                     >
-                      <Box color={item.color[themeMode === 'light' ? 50 : 900]}>
+                      <Box color={item.color[themeMode === "light" ? 50 : 900]}>
                         {item.icon}
                       </Box>
                     </Box>
                     <Box
                       component={Typography}
-                      variant={'h6'}
+                      variant={"h6"}
                       gutterBottom
                       fontWeight={500}
                     >
@@ -463,19 +463,19 @@ const Features = ({ themeMode = 'dark' }) => {
                 item
                 xs={12}
                 md={6}
-                data-aos={isMd ? 'fade-left' : 'fade-up'}
+                data-aos={isMd ? "fade-left" : "fade-up"}
               >
                 <Box
-                  display={'flex'}
-                  flexDirection={'column'}
-                  justifyContent={'center'}
-                  width={'100%'}
-                  height={'100%'}
+                  display={"flex"}
+                  flexDirection={"column"}
+                  justifyContent={"center"}
+                  width={"100%"}
+                  height={"100%"}
                 >
                   <Box marginBottom={2}>
                     <Box
                       component={Typography}
-                      variant={'h4'}
+                      variant={"h4"}
                       gutterBottom
                       fontWeight={600}
                     >
@@ -491,12 +491,12 @@ const Features = ({ themeMode = 'dark' }) => {
                         <Box
                           component={ListItem}
                           disableGutters
-                          width={'auto'}
+                          width={"auto"}
                           padding={0}
                         >
                           <Box
                             component={ListItemAvatar}
-                            minWidth={'auto !important'}
+                            minWidth={"auto !important"}
                             marginRight={2}
                           >
                             <Box
