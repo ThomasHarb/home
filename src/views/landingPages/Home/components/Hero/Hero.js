@@ -111,7 +111,7 @@ const Hero = () => {
             width={"100%"}
             alt="..."
             marginTop={10}
-            marginLeft={15}
+            marginLeft={{ xs: 2, md: 15 }}
             sx={{
               filter:
                 theme.palette.mode === "dark"
