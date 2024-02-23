@@ -454,11 +454,6 @@ const Seeprojects = () => {
                     React - Material UI - Javascript
                   </Typography>
                 </CardContent>
-                <CardActions>
-                  <Button size="small" href="/">
-                    Learn more
-                  </Button>
-                </CardActions>
               </Card>
             </Grid>
           </Grid>
