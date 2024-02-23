@@ -16,17 +16,6 @@ const Seeprojects = () => {
   return (
     <Box>
       <Box marginBottom={4}>
-        <Typography
-          sx={{
-            textTransform: "uppercase",
-            fontWeight: "medium",
-          }}
-          gutterBottom
-          color={"textSecondary"}
-          align={"center"}
-        >
-          Projects
-        </Typography>
         <Box
           component={Typography}
           fontWeight={700}
@@ -34,17 +23,27 @@ const Seeprojects = () => {
           gutterBottom
           align={"center"}
         >
-          Collect, process and analyse data
-          <br />
-          for all kinds of businesses
+          Projects
+        </Box>
+        <Typography
+          sx={{
+            fontWeight: "medium",
+          }}
+          gutterBottom
+          color={"textSecondary"}
+          align={"center"}
+          marginTop={2}
+        >
+          Collect, process and analyse data for all kinds of businesses
           <br />
           to driving global change
-        </Box>
+        </Typography>
         <Typography
           variant={"h6"}
           component={"p"}
           color={"textSecondary"}
           align={"center"}
+          marginTop={4}
         >
           My name is Thomas Harbonnnier, French data analyst with a backgroung
           in Biology and Bioinformatics.
@@ -55,6 +54,7 @@ const Seeprojects = () => {
           component={"p"}
           color={"primary"}
           align={"center"}
+          marginTop={2}
         >
           Data analyst
           <br />

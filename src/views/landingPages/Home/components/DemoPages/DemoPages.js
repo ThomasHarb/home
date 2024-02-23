@@ -9,7 +9,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import TerminalIcon from "@mui/icons-material/Terminal";
+/* import TerminalIcon from "@mui/icons-material/Terminal"; */
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import BiotechIcon from "@mui/icons-material/Biotech";
 import SchoolIcon from "@mui/icons-material/School";
@@ -18,25 +18,26 @@ import ScienceIcon from "@mui/icons-material/Science";
 const DemoPages = () => {
   return (
     <Box>
-      <Typography
-        sx={{
-          textTransform: "uppercase",
-          fontWeight: "medium",
-        }}
+      <Box
+        component={Typography}
+        fontWeight={700}
+        variant={"h3"}
         gutterBottom
-        color={"textSecondary"}
         align={"center"}
-      ></Typography>
+      >
+        Career Path
+      </Box>
       <Typography
         sx={{
-          textTransform: "uppercase",
           fontWeight: "medium",
         }}
         gutterBottom
         color={"textSecondary"}
         align={"center"}
       >
-        Career path
+        Embark on a fascinating career at the intersection of Data and
+        technology as a Bioinformatic Python Developer,
+        <br /> leveraging coding skills to analyze complex data.
       </Typography>
       <Timeline position="alternate">
         {/* <TimelineItem>

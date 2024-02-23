@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { useTheme } from '@mui/material/styles';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Divider from '@mui/material/Divider';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Slide from '@mui/material/Slide';
-import { Topbar, Sidebar, Footer } from './components';
-import Container from '../../common/Container';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { useTheme } from "@mui/material/styles";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Divider from "@mui/material/Divider";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Slide from "@mui/material/Slide";
+import { Topbar, Sidebar, Footer } from "./components";
+import Container from "../../common/Container";
 
 const HideOnScroll = ({ children }) => {
   const trigger = useScrollTrigger();
@@ -45,7 +45,7 @@ const Main = ({
     <div>
       <HideOnScroll>
         <AppBar
-          position={'fixed'}
+          position={"fixed"}
           sx={{
             backgroundColor: theme.palette.background.paper,
           }}
