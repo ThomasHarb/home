@@ -44,23 +44,13 @@ const Main = ({
   return (
     <div>
       <HideOnScroll>
-        <AppBar
-          position={"fixed"}
-          sx={{
-            backgroundColor: theme.palette.background.paper,
-          }}
-          elevation={1}
-        >
-          <Container paddingY={{ xs: 1 / 2, sm: 1 }}>
-            <Topbar
-              onSidebarOpen={handleSidebarOpen}
-              themeMode={themeMode}
-              themeToggler={themeToggler}
-              setThemePalette={setThemePalette}
-              paletteType={paletteType}
-            />
-          </Container>
-        </AppBar>
+        <Topbar
+          onSidebarOpen={handleSidebarOpen}
+          themeMode={themeMode}
+          themeToggler={themeToggler}
+          setThemePalette={setThemePalette}
+          paletteType={paletteType}
+        />
       </HideOnScroll>
       <Sidebar
         onClose={handleSidebarClose}
