@@ -8,9 +8,12 @@ import Avatar from "@mui/material/Avatar";
 import Photo from "../../../../svg/photoThomas.jpeg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Typography } from "@mui/material";
+import { useMediaQuery } from "@mui/material";
 /* import { Typography } from "@mui/material"; */
 
 const Topbar = ({ onSidebarOpen }) => {
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   return (
     <Box
       display={"flex"}
@@ -27,18 +30,38 @@ const Topbar = ({ onSidebarOpen }) => {
           {/*<MenuIcon />*/}
           {/* </IconButton> */}
         </Box>
-        <Box
-          display={"flex"}
-          alignItems="baseline"
-          component="a"
-          underline="none"
-          href={process.env.PUBLIC_URL + "/"}
-          title="THarbonnier"
-          height={{ xs: 28, md: 32 }}
-          width={45}
-        >
-          <Avatar alt="Thomas Harbonnier" src={Photo} />
-        </Box>
+        {!isMobile && (
+          <Box
+            display={"flex"}
+            alignItems="baseline"
+            component="a"
+            underline="none"
+            href={process.env.PUBLIC_URL + "/"}
+            title="THarbonnier"
+            height={{ xs: 28, md: 32 }}
+            width={45}
+          >
+            <Avatar alt="Thomas Harbonnier" src={Photo} />
+          </Box>
+        )}
+      </Box>
+      <Box display="flex" flexGrow={1} marginLeft={2}>
+        {isMobile && (
+          <Typography>
+            <h5>
+              Thomas Harbonnier <br />
+              Python Developer
+              <br />| Data Analyst
+            </h5>
+          </Typography>
+        )}
+        {!isMobile && (
+          <Typography justifyContent={"center"}>
+            Thomas Harbonnier
+            <br />
+            Python Developer | Data Analyst
+          </Typography>
+        )}
       </Box>
       <Box display="flex" alignItems={"center"}>
         <Box>
