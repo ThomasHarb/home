@@ -15,7 +15,7 @@ import InsightsIcon from "@mui/icons-material/Insights";
 import Photo from "../../../../svg/photoThomas.jpeg";
 import Link from "@mui/material/Link";
 
-function ResponsiveAppBar() {
+function Topbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -273,4 +273,4 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
-export default ResponsiveAppBar;
+export default Topbar;
