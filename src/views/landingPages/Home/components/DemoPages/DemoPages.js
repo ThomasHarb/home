@@ -171,7 +171,7 @@ const DemoPages = () => {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              MSc Immunotechnologies and Biotherapies
+              MSc Immunologies
             </Typography>
             <Typography>UPMC Paris VI Sorbonnes University</Typography>
           </TimelineContent>
