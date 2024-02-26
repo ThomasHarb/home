@@ -47,7 +47,7 @@ const Seeprojects = () => {
         >
           My name is Thomas Harbonnnier, French data analyst with a backgroung
           in Biology and Bioinformatics.
-          <br />I can work remotely or in situ
+          <br />I can work remotely or on site
         </Typography>
         <Typography
           variant={"h6"}
