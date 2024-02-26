@@ -28,7 +28,7 @@ const Hero = () => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={12}>
           <Box display="flex" flexDirection="row" marginTop={2}>
-            <Grid item container alignItems={"center"} xs={12} md={12}>
+            <Grid item container alignItems={"center"} xs={12} md={6}>
               <Box data-aos={isMd ? "fade-right" : "fade-up"}>
                 <Box marginBottom={2}>
                   <Typography
@@ -65,6 +65,7 @@ const Hero = () => {
                     sx={{ fontWeight: 400 }}
                   >
                     Developer proficient in Python development and data anlysis,
+                    <br />
                     ready to empower your project with precision and expertise.
                   </Typography>
                 </Box>
@@ -78,7 +79,7 @@ const Hero = () => {
                     variant="contained"
                     color="primary"
                     size="large"
-                    fullWidth={isMd ? false : true}
+                    /* fullWidth={isMd ? false : true} */
                     href={"https://thomasharb.github.io/contact/"}
                     target={"_blank"}
                   >
@@ -108,94 +109,6 @@ const Hero = () => {
                 </Box>
               </Box>
             </Grid>
-            <Box
-              width={"100%"}
-              alt="..."
-              marginTop={10}
-              marginLeft={{ xs: 2, md: 15 }}
-              sx={{
-                filter:
-                  theme.palette.mode === "dark"
-                    ? "brightness(0) invert(0.7)"
-                    : "none",
-              }}
-              alignItems="center"
-            >
-              <Grid container spacing={2}>
-                <Grid item xs={6} md={6} marginLeft={0}>
-                  <Box data-aos={isMd ? "fade-right" : "fade-up"}>
-                    <Box marginBottom={2}>
-                      <div className="icon-container">
-                        <Tooltip title="GitHub">
-                          <div className="icon-wrapper">
-                            <FaGitAlt style={{ fontSize: "4em" }} />
-                            <Typography variant="caption">Git</Typography>
-                          </div>
-                        </Tooltip>
-                        <Tooltip title="Python">
-                          <div className="icon-wrapper">
-                            <FaPython style={{ fontSize: "4em" }} />
-                            <Typography variant="caption">Python</Typography>
-                          </div>
-                        </Tooltip>
-                        <Tooltip title="JavaScript">
-                          <div className="icon-wrapper">
-                            <TbBrandJavascript style={{ fontSize: "4em" }} />
-                            <Typography variant="caption">
-                              JavaScript
-                            </Typography>
-                          </div>
-                        </Tooltip>
-                        <Tooltip title="Bash">
-                          <div className="icon-wrapper">
-                            <VscTerminalBash style={{ fontSize: "4em" }} />
-                            <Typography variant="caption">Bash</Typography>
-                          </div>
-                        </Tooltip>
-                      </div>
-                    </Box>
-                  </Box>
-                </Grid>
-                {/*             <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br /> */}
-                <Grid item xs={6} md={6}>
-                  <Box data-aos={isMd ? "fade-left" : "fade-up"}>
-                    <Box marginBottom={2}>
-                      <div className="icon-containerTwo">
-                        <Tooltip title="Linux">
-                          <div className="icon-wrapper">
-                            <FcLinux style={{ fontSize: "4em" }} />
-                            <Typography variant="caption">Linux</Typography>
-                          </div>
-                        </Tooltip>
-                        <Tooltip title="Docker">
-                          <div className="icon-wrapper">
-                            <FaDocker style={{ fontSize: "4em" }} />
-                            <Typography variant="caption">Docker</Typography>
-                          </div>
-                        </Tooltip>
-                        <Tooltip title="MySQL">
-                          <div className="icon-wrapper">
-                            <SiMysql style={{ fontSize: "4em" }} />
-                            <Typography variant="caption">MySQL</Typography>
-                          </div>
-                        </Tooltip>
-                        <Tooltip title="React">
-                          <div className="icon-wrapper">
-                            <FaReact style={{ fontSize: "4em" }} />
-                            <Typography variant="caption">React</Typography>
-                          </div>
-                        </Tooltip>
-                      </div>
-                    </Box>
-                  </Box>
-                </Grid>
-              </Grid>
-            </Box>
           </Box>
         </Grid>
       </Grid>

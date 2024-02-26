@@ -95,7 +95,7 @@ function Topbar() {
                 <Link
                   underline="none"
                   component="a"
-                  href="https://thomasharb.github.io/home/"
+                  href={process.env.PUBLIC_URL + "/"}
                   color="textSecondary"
                 >
                   Home
@@ -159,7 +159,7 @@ function Topbar() {
             <Link
               underline="none"
               component="a"
-              href="https://thomasharb.github.io/home/"
+              href={process.env.PUBLIC_URL + "/"}
               color="textSecondary"
             >
               Home
@@ -230,7 +230,7 @@ function Topbar() {
                 <Link
                   underline="none"
                   component="a"
-                  href="https://thomasharb.github.io/home/"
+                  href={process.env.PUBLIC_URL + "/"}
                   color="textSecondary"
                 >
                   Home
