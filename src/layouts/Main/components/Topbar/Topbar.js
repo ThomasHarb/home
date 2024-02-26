@@ -63,39 +63,29 @@ function Topbar() {
             Python Developer | Data Analyst
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
+            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
               <MenuIcon />
             </IconButton>
             <Menu
+              sx={{ mt: "45px" }}
               id="menu-appbar"
-              anchorEl={anchorElNav}
+              anchorEl={anchorElUser}
               anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
+                vertical: "top",
+                horizontal: "right",
               }}
               keepMounted
               transformOrigin={{
                 vertical: "top",
-                horizontal: "left",
+                horizontal: "right",
               }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
+              open={Boolean(anchorElUser)}
+              onClose={handleCloseUserMenu}
             >
               <MenuItem onClick={handleCloseUserMenu}>
                 <Link
                   underline="none"
                   component="a"
-                  /* href={process.env.PUBLIC_URL + "/"} */
                   href="#main"
                   color="textSecondary"
                 >
@@ -106,7 +96,6 @@ function Topbar() {
                 <Link
                   underline="none"
                   component="a"
-                  /* href="https://thomasharb.github.io/netflix-project/" */
                   href="#skills"
                   color="textSecondary"
                 >
@@ -260,12 +249,10 @@ function Topbar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Thomas Harbonnier" src={Photo} />
-              </IconButton>
+            <Tooltip title="T.Harbonnier Python Developer | Data analyst">
+              <Avatar alt="Thomas Harbonnier" src={Photo} />
             </Tooltip>
-            <Menu
+            {/* <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"
               anchorEl={anchorElUser}
@@ -281,16 +268,10 @@ function Topbar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {/*               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))} */}
               <MenuItem onClick={handleCloseUserMenu}>
                 <Link
                   underline="none"
                   component="a"
-                  /* href={process.env.PUBLIC_URL + "/"} */
                   href="#main"
                   color="textSecondary"
                 >
@@ -301,7 +282,6 @@ function Topbar() {
                 <Link
                   underline="none"
                   component="a"
-                  /* href="https://thomasharb.github.io/netflix-project/" */
                   href="#skills"
                   color="textSecondary"
                 >
@@ -358,7 +338,7 @@ function Topbar() {
                   Contact
                 </Link>
               </MenuItem>
-            </Menu>
+            </Menu> */}
           </Box>
         </Toolbar>
       </Container>
