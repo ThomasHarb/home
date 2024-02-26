@@ -39,144 +39,61 @@ const DemoPages = () => {
         technology as a Bioinformatic Python Developer,
         <br /> leveraging coding skills to analyze complex data.
       </Typography>
-      <Timeline position="alternate">
-        {/* <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
-            align="right"
-            variant="body2"
-            color="text.secondary"
-          >
-            Since Dec 2023
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot>
-              <TerminalIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h6" component="span">
-              Freelance Developer
-            </Typography>
-            <Typography>Python Dev, Data Analysis, Data science & Web Dev</Typography>
-          </TimelineContent>
-        </TimelineItem> */}
+      {[
+        {
+          title: "Pathoquest",
+          date: "Nov 2020 - Janv 2024",
+          details: "Bioinformatics engineer",
+          icon: LaptopMacIcon,
+        },
+        {
+          title: "MSc in Bioinformatics and Data science",
+          date: "Sept 2019 - Sept 2020",
+          details: "Nantes University",
+          icon: SchoolIcon,
+        },
+        {
+          title: "Cytometry expert",
+          date: "Jun 2016 - Jun 2019",
+          details: "CIPHE Marseille luminy",
+          icon: BiotechIcon,
+        },
+        {
+          title: "Research engineer",
+          date: "Oct 2014 - Apr 2016",
+          details: "B Lymphocytes, Autoimmunity and Immunotherapies - UMR 1227",
+          icon: ScienceIcon,
+        },
+        {
+          title: "MSc Immunologies",
+          date: "Sept 2013 - Jun 2014",
+          details: "UPMC Paris VI Sorbonnes University",
+          icon: SchoolIcon,
+        },
+      ].map(({ icon: Item, date, details, title }, i) => (
         <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}
             variant="body2"
             color="text.secondary"
           >
-            Nov 2020 - Jan 2024
+            {date}
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
             <TimelineDot color="primary">
-              <LaptopMacIcon />
+              <Item />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              Pathoquest
+              {title}
             </Typography>
-            <Typography>Bioinformatics engineer</Typography>
+            <Typography>{details}</Typography>
           </TimelineContent>
         </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            variant="body2"
-            color="text.secondary"
-          >
-            Sept 2019 - Sept 2020
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary" variant="outlined">
-              <SchoolIcon />
-            </TimelineDot>
-            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              MSc in Bioinformatics and Data science
-            </Typography>
-            <Typography>Nantes University</Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            variant="body2"
-            color="text.secondary"
-          >
-            Jun 2016 - Jun 2019
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-            <TimelineDot color="secondary">
-              <BiotechIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Cytometry expert
-            </Typography>
-            <Typography>CIPHE Marseille luminy</Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            align="right"
-            variant="body2"
-            color="text.secondary"
-          >
-            Oct 2014 - Apr 2016
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot>
-              <ScienceIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              Research engineer
-            </Typography>
-            <Typography>
-              B Lymphocytes, Autoimmunity and Immunotherapies - UMR 1227
-            </Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent
-            sx={{ m: "auto 0" }}
-            variant="body2"
-            color="text.secondary"
-          >
-            Sept 2013 - Jun 2014
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary">
-              <SchoolIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              MSc Immunologies
-            </Typography>
-            <Typography>UPMC Paris VI Sorbonnes University</Typography>
-          </TimelineContent>
-        </TimelineItem>
-      </Timeline>
+      ))}
     </Box>
   );
 };
