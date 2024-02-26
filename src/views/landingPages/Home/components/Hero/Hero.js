@@ -24,7 +24,7 @@ const Hero = () => {
   });
 
   return (
-    <div>
+    <div id="main">
       <Grid container spacing={4}>
         <Grid item xs={12} md={12}>
           <Box display="flex" flexDirection="row" marginTop={2}>

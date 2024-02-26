@@ -17,7 +17,7 @@ import ScienceIcon from "@mui/icons-material/Science";
 
 const DemoPages = () => {
   return (
-    <Box>
+    <div id="work">
       <Box
         component={Typography}
         fontWeight={700}
@@ -94,7 +94,7 @@ const DemoPages = () => {
           </TimelineContent>
         </TimelineItem>
       ))}
-    </Box>
+    </div>
   );
 };
 

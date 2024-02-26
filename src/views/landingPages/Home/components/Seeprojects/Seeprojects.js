@@ -14,7 +14,7 @@ import { MdSpaceDashboard } from "react-icons/md";
 
 const Seeprojects = () => {
   return (
-    <Box>
+    <div id="projects">
       <Box marginBottom={4}>
         <Box
           component={Typography}
@@ -491,7 +491,7 @@ const Seeprojects = () => {
         alignItems={"center"}
         marginBottom={4}
       ></Box>
-    </Box>
+    </div>
   );
 };
 

@@ -95,7 +95,8 @@ function Topbar() {
                 <Link
                   underline="none"
                   component="a"
-                  href={process.env.PUBLIC_URL + "/"}
+                  /* href={process.env.PUBLIC_URL + "/"} */
+                  href="#main"
                   color="textSecondary"
                 >
                   Home
@@ -105,20 +106,51 @@ function Topbar() {
                 <Link
                   underline="none"
                   component="a"
-                  href="https://thomasharb.github.io/netflix-project/"
+                  /* href="https://thomasharb.github.io/netflix-project/" */
+                  href="#skills"
                   color="textSecondary"
                 >
-                  Movies Project
+                  Skills
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleCloseUserMenu}>
                 <Link
                   underline="none"
                   component="a"
-                  href="https://thomasharb.github.io/fastp-project/"
+                  href="#services"
                   color="textSecondary"
                 >
-                  Fastp Dashboard Project
+                  Services
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseUserMenu}>
+                <Link
+                  underline="none"
+                  component="a"
+                  href="#projects"
+                  color="textSecondary"
+                >
+                  Projects
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseUserMenu}>
+                <Link
+                  underline="none"
+                  component="a"
+                  href="#about"
+                  color="textSecondary"
+                >
+                  About
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseUserMenu}>
+                <Link
+                  underline="none"
+                  component="a"
+                  href="#work"
+                  color="textSecondary"
+                >
+                  Work
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleCloseUserMenu}>
@@ -159,7 +191,8 @@ function Topbar() {
             <Link
               underline="none"
               component="a"
-              href={process.env.PUBLIC_URL + "/"}
+              /* href={process.env.PUBLIC_URL + "/"} */
+              href="#main"
               color="textSecondary"
             >
               Home
@@ -167,20 +200,47 @@ function Topbar() {
             <Link
               underline="none"
               component="a"
-              href="https://thomasharb.github.io/netflix-project/"
+              href="#skills"
               color="textSecondary"
               marginLeft={4}
             >
-              Movies Project
+              Skills
             </Link>
             <Link
               underline="none"
               component="a"
-              href="https://thomasharb.github.io/fastp-project/"
+              href="#services"
               color="textSecondary"
               marginLeft={4}
             >
-              Fastp Dashboard Project
+              Services
+            </Link>
+            <Link
+              underline="none"
+              component="a"
+              href="#projects"
+              color="textSecondary"
+              marginLeft={4}
+            >
+              Projects
+            </Link>
+            <Link
+              underline="none"
+              component="a"
+              href="#about"
+              color="textSecondary"
+              marginLeft={4}
+            >
+              About
+            </Link>
+            <Link
+              underline="none"
+              component="a"
+              href="#work"
+              color="textSecondary"
+              marginLeft={4}
+            >
+              Work
             </Link>
           </Box>
           <Box
@@ -230,7 +290,8 @@ function Topbar() {
                 <Link
                   underline="none"
                   component="a"
-                  href={process.env.PUBLIC_URL + "/"}
+                  /* href={process.env.PUBLIC_URL + "/"} */
+                  href="#main"
                   color="textSecondary"
                 >
                   Home
@@ -240,20 +301,51 @@ function Topbar() {
                 <Link
                   underline="none"
                   component="a"
-                  href="https://thomasharb.github.io/netflix-project/"
+                  /* href="https://thomasharb.github.io/netflix-project/" */
+                  href="#skills"
                   color="textSecondary"
                 >
-                  Movies Project
+                  Skills
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleCloseUserMenu}>
                 <Link
                   underline="none"
                   component="a"
-                  href="https://thomasharb.github.io/fastp-project/"
+                  href="#services"
                   color="textSecondary"
                 >
-                  Fastp Dashboard Project
+                  Services
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseUserMenu}>
+                <Link
+                  underline="none"
+                  component="a"
+                  href="#projects"
+                  color="textSecondary"
+                >
+                  Projects
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseUserMenu}>
+                <Link
+                  underline="none"
+                  component="a"
+                  href="#about"
+                  color="textSecondary"
+                >
+                  About
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseUserMenu}>
+                <Link
+                  underline="none"
+                  component="a"
+                  href="#work"
+                  color="textSecondary"
+                >
+                  Work
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleCloseUserMenu}>

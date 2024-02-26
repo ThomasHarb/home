@@ -14,7 +14,7 @@ import { FaReact } from "react-icons/fa";
 function Skills() {
   const theme = useTheme();
   return (
-    <Box>
+    <div id="skills">
       <Box
         component={Typography}
         fontWeight={700}
@@ -53,7 +53,7 @@ function Skills() {
           </Box>
         ))}
       </Box>
-    </Box>
+    </div>
   );
 }
 

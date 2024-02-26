@@ -333,7 +333,7 @@ const Features = ({ themeMode = "dark" }) => {
     defaultMatches: true,
   });
   return (
-    <Box>
+    <div id="about">
       <Box marginBottom={4}>
         <Box
           component={Typography}
@@ -531,7 +531,7 @@ const Features = ({ themeMode = "dark" }) => {
           </Grid>
         ))}
       </Grid>
-    </Box>
+    </div>
   );
 };
 

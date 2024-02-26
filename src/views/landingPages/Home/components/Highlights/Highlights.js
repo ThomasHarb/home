@@ -8,7 +8,7 @@ import Grid from "@mui/material/Grid";
 const Highlights = () => {
   const theme = useTheme();
   return (
-    <Box>
+    <div id="services">
       <Box
         component={Typography}
         fontWeight={700}
@@ -146,7 +146,7 @@ const Highlights = () => {
           </Grid>
         ))}
       </Grid>
-    </Box>
+    </div>
   );
 };
 
