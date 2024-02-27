@@ -41,7 +41,6 @@ function Topbar() {
           <InsightsIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
-            noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
             sx={{
@@ -58,9 +57,24 @@ function Topbar() {
           </Typography>
           <Typography
             justifyContent={"center"}
-            sx={{ display: { xs: "none", md: "flex" } }}
+            marginLeft={2}
+            sx={{ display: { xs: "none", md: "none", lg: "flex" } }}
           >
-            Python Developer | Data Analyst
+            Python Developer
+          </Typography>
+          <Typography
+            justifyContent={"center"}
+            marginLeft={2}
+            sx={{ display: { xs: "none", md: "none", lg: "flex" } }}
+          >
+            |
+          </Typography>
+          <Typography
+            justifyContent={"center"}
+            marginLeft={2}
+            sx={{ display: { xs: "none", md: "none", lg: "flex" } }}
+          >
+            Data Analyst
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
@@ -139,7 +153,7 @@ function Topbar() {
                   href="#work"
                   color="textSecondary"
                 >
-                  Work
+                  Career
                 </Link>
               </MenuItem>
               <MenuItem onClick={handleCloseUserMenu}>
@@ -175,7 +189,7 @@ function Topbar() {
           </Typography>
           <Box
             sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
-            marginLeft={8}
+            marginLeft={2}
           >
             <Link
               underline="none"
@@ -228,13 +242,17 @@ function Topbar() {
               href="#work"
               color="textSecondary"
               marginLeft={4}
+              marginRight={2}
             >
-              Work
+              Career
             </Link>
           </Box>
           <Box
-            sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}
-            marginRight={4}
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex", lg: "flex" },
+            }}
+            marginRight={2}
           >
             <Button
               variant="contained"
@@ -243,12 +261,20 @@ function Topbar() {
               target="blank"
               href="https://thomasharb.github.io/contact/"
               size="large"
+              sx={{
+                minWidth: 150,
+              }}
             >
-              Contact me
+              Contact
             </Button>
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none", lg: "flex" },
+            }}
+          >
             <Tooltip title="T.Harbonnier Python Developer | Data analyst">
               <Avatar alt="Thomas Harbonnier" src={Photo} />
             </Tooltip>

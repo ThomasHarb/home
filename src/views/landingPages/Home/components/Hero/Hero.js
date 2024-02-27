@@ -73,15 +73,18 @@ const Hero = () => {
                   display="flex"
                   flexDirection={{ xs: "column", sm: "row" }}
                   alignItems={{ xs: "stretched", sm: "flex-start" }}
+                  centered
                 >
                   <Button
                     component={"a"}
                     variant="contained"
                     color="primary"
                     size="large"
-                    /* fullWidth={isMd ? false : true} */
                     href={"https://thomasharb.github.io/contact/"}
                     target={"_blank"}
+                    sx={{
+                      width: 150,
+                    }}
                   >
                     Contact Me
                   </Button>

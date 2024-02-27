@@ -41,13 +41,13 @@ const DemoPages = () => {
       </Typography>
       {[
         {
-          title: "Pathoquest",
+          title: "Bioinformatics engineer | Data Analyst",
           date: "Nov 2020 - Janv 2024",
-          details: "Bioinformatics engineer",
+          details: "Pathoquest",
           icon: LaptopMacIcon,
         },
         {
-          title: "MSc in Bioinformatics and Data science",
+          title: "MSc in Bioinformatics & Data science",
           date: "Sept 2019 - Sept 2020",
           details: "Nantes University",
           icon: SchoolIcon,

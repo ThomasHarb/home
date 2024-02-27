@@ -21,7 +21,7 @@ const Highlights = () => {
       <Grid container spacing={2}>
         {[
           {
-            title: "Data scientist",
+            title: "Data Scientist",
             subtitle:
               "Unraveling the data mysteries ans crafting solutions - Here to turn your data into innovation.",
             icon: (
@@ -65,7 +65,7 @@ const Highlights = () => {
             ),
           },
           {
-            title: "Data analyst",
+            title: "Data Analyst",
             subtitle:
               "Unleashing the power of data through meticulous analysis - Ready to transform your insights into action.",
             icon: (
@@ -87,7 +87,7 @@ const Highlights = () => {
             ),
           },
           {
-            title: "Web developer",
+            title: "Web Developer",
             subtitle: "Designing Interfaces, Connecting Audiences.",
             icon: (
               <svg
